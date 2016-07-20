@@ -2,7 +2,7 @@ echo "Generating lowres pages:"
 for f in ../originais/*.jpg
 do
     echo "Converting $f ..."
-    convert $f -resize 1200 $f.lowres.jpg
+    convert $f -rotate 90 -resize 1000 $f.lowres.jpg
 done
 
 echo "And now generating the lowres PDF..."
